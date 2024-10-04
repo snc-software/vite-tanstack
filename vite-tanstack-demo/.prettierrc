@@ -1,0 +1,9 @@
+{
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^components/", "^views/", "^infrastructure/", "^hooks/", "^utils/", "^[./].*(?<!\\.(c|le|sc)ss)$", "\\.(c|le|sc)ss$"],
+  "importOrderSortSpecifiers": true
+}
