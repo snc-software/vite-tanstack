@@ -1,12 +1,7 @@
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
+import {Outlet, createRootRoute } from '@tanstack/react-router';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { Header } from '../components/layout/Header';
 
-const activeProps = {
-  style: {
-    fontWeight: 'bold',
-  },
-};
 
 const Root = () => {
   return (
