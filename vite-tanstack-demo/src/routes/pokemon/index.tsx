@@ -1,6 +1,7 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
+import { createFileRoute } from '@tanstack/react-router';
 import { getPokemons } from '../../api/pokemon';
 import { useQuery } from '@tanstack/react-query';
+import PokemonTable from '@/components/features/pokemons/pokemonTable/PokemonTable';
 
 const PokemonListView = () => {
   const {
@@ -19,15 +20,7 @@ const PokemonListView = () => {
   return (
     <>
       <h2>Pokemons</h2>
-      <ul>
-        {pokemons?.map((pokemon) => (
-          <li>
-            <Link to="/pokemon/$id" params={{ id: pokemon.id }}>
-              {pokemon.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <PokemonTable pokemons={pokemons ?? []} />
     </>
   );
 };

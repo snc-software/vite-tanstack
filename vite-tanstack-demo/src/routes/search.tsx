@@ -28,7 +28,7 @@ const SearchView = () => {
     <div>
       <h1 className="font-bold text-center mb-1">Search</h1>
       <form className="max-w-sm mx-auto">
-        <div class="mb-5">
+        <div className="mb-5">
           <input
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={query}
@@ -37,7 +37,7 @@ const SearchView = () => {
             }}
           />
         </div>
-        <div class="mb-5">
+        <div className="mb-5">
           <input
             className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
             type="checkbox"
